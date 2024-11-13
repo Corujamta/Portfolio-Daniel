@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+html {
+    height: 100vh;
+}
+
+.site {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner {
+    background: #2f3542;
+    background-image: url(../img/bg_header.png);
+    background-size: cover;
+}
+
+#particles-js {
+    z-index: -1;
+    min-height: 450px;
+
+}
+
+
+.teste {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.conteudoprincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 95vw;
+    margin-left: 20px;
+    position: absolute;
+    z-index: 0;
+}
+
+.conteudoprincipal>div {
+    margin-top: -150px;
+    margin-left: 20px;
+}
+
+.banner h1 {
+    font-size: 1.875em;
+    color: white;
+    font-weight: 600;
+}
+
+.banner span {
+    color: #2ed573;
+}
+
+
+.menu ul {
+    display: flex;
+    font-size: 1.35em;
+    gap: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out 0.3s;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.menu ul li a:hover {
+    color: #2ed573;
+    text-decoration: underline;
+    text-underline-offset: 25px;
+
+}
+
+/* TextoPrincipal */
+.textoprincipal div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.textobanner {
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.botoes a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.botoes a p {
+    padding-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.botao1 {
+    width: 150px;
+    height: 40px;
+    background: #25AA5C;
+    border-radius: 12px;
+    transition: ease 0.5s;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.botao1 a {
+    color: white;
+    padding-top: 5px;
+}
+
+.botao1:hover {
+    background: #2ed573;
+    border-radius: 12px;
+}
+
+.botao2 {
+    width: 100px;
+    border: 10px;
+    border: 2px solid #2ed071;
+    border-radius: 12px;
+}
+
+.botao2 a {
+    color: #2ed071;
+}
+
+.textoprincipal h2 {
+    font-size: 4.45em;
+    font-weight: 500;
+    color: white;
+}
+
+.textoprincipal h3 {
+    font-size: 1.90em;
+    font-weight: 450;
+    color: #2ed071;
+}
+
+/* Sobre */
+.sobre {
+    background: #252a34;
+}
+
+.boxsobre {
+    display: flex;
+    padding-top: 40px;
+}
+
+.box1 div>img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 20px #25AA5C;
+    margin-top: 10px;
+    box-shadow:
+        -10px 0 30px #25AA5C,
+        /* sombra vermelha na esquerda */
+        10px 0 30px #2ed573;
+    /* sombra azul na direita */
+    ;
+}
+
+.box1 h2 {
+    font-size: 1.8em;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 350;
+}
+
+.box1 h3 {
+    color: #25AA5C;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+.contatos {
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 40px;
+    text-decoration: none;
+}
+
+.contatos a {
+    text-decoration: none;
+}
+
+.contatos img {
+    gap: 40px;
+}
+
+.box2 h2 {
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: 3em;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.box2 h3 {
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: 1.2em;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.box2 p {
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: 1.1em;
+    line-height: 30px;
+    text-align: justify;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Habilidades */
+.skills {
+    background: #2f3542;
+    background-image: url(../img/bg_skill_section.png);
+    background: cover;
+}
+
+.skills h2 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.skills h3 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+}
+
+.boxskills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.boxskills div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.boxskills div p {
+    text-align: center;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.boxskills img {
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+}
+
+
+/* Projetos */
+.projetos {
+    background: #252a34;
+}
+
+.projetos h2 {
+    font-size: 2.8em;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    padding-bottom: 20px;
+}
+
+.projetos span {
+    color: #2ed573;
+}
+
+.projetos div {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.projetos div div div h4 {
+    color: white;
+    font-size: 1.8em;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 20px;
+}
+
+.projetos div div div img {
+    height: 180px;
+    width: 340px;
+    border-radius: 30px;
+    box-shadow: 20px #25AA5C;
+    box-shadow:
+        -10px 0 10px #25AA5C,
+        /* sombra vermelha na esquerda */
+        10px 0 10px #2ed573;
+    /* sombra azul na direita */
+    ;
+}
+
+.projetosboxs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projetosboxs div {
+    margin: 25px;
+    padding-bottom: 10px;
+    justify-content: center;
+
+}
+
+.projetosboxs>div {
+    width: 400px;
+}
+
+.boxp1 {
+    background: #333;
+    border-radius: 30px;
+}
+
+.boxp2 {
+    background: #333;
+    border-radius: 30px;
+}
+
+.boxp3 {
+    background: #333;
+    border-radius: 30px;
+}
+
+.projetosboxs button {
+    border: none;
+    border-radius: 20px;
+    color: white;
+    width: 240px;
+    font-size: 16px;
+    height: 50px;
+    background: #25AA5C;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.projetinhos {
+    display: flex;
+}
+
+.linguagensprojetos {
+    display: flex;
+}
+
+.linguagensprojetos a {
+    text-decoration: none;
+    color: #82E6AB;
+}
+
+.linguagensprojetos a p {
+    display: flex;
+    margin: 5px;
+    border: 2px solid #82E6AB;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Rodape */
+.rodape {
+    background: #2f3542;
+    background-image: url(../img/bg_contact_section.png);
+    background: cover;
+    display: flex;
+}
+
+.rodape div {
+    padding-top: 40px;
+    display: flex;
+}
+
+.rodape div>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape>div>div {
+    display: flex;
+}
+
+.formasdecontato a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.formasdecontato img {
+    width: 20px;
+    height: 20px;
+}
+
+.rodape .contatos {
+    flex-direction: row;
+    gap: 20px;
+}
+
+.imagemrodape {
+    width: 500px;
+    height: 500px;
+}
+
+.rodape h2 {
+    font-size: 2.6em;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    padding-bottom: 20px;
+    font-style: normal;
+}
+
+.rodape h3 {
+    font-size: 1.2em;
+    color: white;
+    text-align: justify;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    padding-bottom: 20px;
+    font-style: normal;
+}
+
+/* Responsivo 1280px */
+@media (max-width: 1280px) {
+
+    /* Projetos */
+    .projetosboxs div {
+        margin: 15px;
+    }
+}
+
+/* Responsivo 1024px */
+@media (max-width: 1024px) {
+
+    /* Banner */
+    h1 {
+        margin-left: 15px;
+    }
+
+    .menu {
+        margin-right: 15px;
+    }
+
+    .conteudoprincipal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        width: 95vw;
+        margin-left: 20px;
+        position: absolute;
+        z-index: 0;
+    }
+
+    /* Sobre */
+    .box1 {
+        margin-left: 15px;
+    }
+
+    .box2 {
+        margin-right: 15px;
+    }
+
+    .box2 p {
+        line-height: 25px;
+    }
+
+    /* Projetos */
+    .projetos div div div img {
+        height: 170px;
+        width: 260px;
+    }
+
+    .projetos div {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 40px;
+        align-items: center;
+    }
+
+    /* Rodape */
+    .rodape div div {
+        margin-left: 15px;
+    }
+
+}
+
+/* Responsivo 768 */
+@media (max-width: 768px) {
+
+    /* Header */
+    .menu {
+        display: none;
+    }
+
+    /* Sobre */
+    .boxsobre {
+        flex-direction: column;
+    }
+
+    .box1 div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box2 h2 {
+        justify-content: center;
+        display: flex;
+        margin-top: -25px;
+    }
+
+    .box2 p {
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
+
+    /* SKILLS */
+    .boxskills {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skills {
+        height: 115vh;
+    }
+
+    /* Projetos */
+    .projetosboxs {
+        flex-direction: column;
+    }
+
+    .imagemrodape img {
+        display: none;
+    }
+
+    .boxskills {
+        flex-wrap: wrap;
+        flex: wrap;
+        align-items: center;
+        gap: 52px;
+        padding: 92px;
+        justify-content: center;
+    }
+}
+
+/* Responsivo ate 500 */
+@media (max-width: 500px) {
+    .textoprincipal h2 {
+        font-size: 4.25em;
+        font-weight: 500;
+        color: white;
+    }
+
+    .conteudoprincipal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        width: 95vw;
+        margin-left: 20px;
+        position: absolute;
+        z-index: 0;
+    }
+    .box1 div {
+        gap: 30px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Responsivo 360 */
+@media (max-width: 360px) {
+
+    /* Projetos */
+    .projetosboxs {
+        .boxp1 {
+            width: 325px;
+        }
+
+        .boxp2 {
+            width: 325px;
+        }
+
+        .boxp3 {
+            width: 325px;
+        }
+    }
+
+    .boxskills {
+        gap: 10px;
+    }
+
+    .conteudoprincipal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        width: 85vw;
+        position: absolute;
+        z-index: 0;
+    }
+}
